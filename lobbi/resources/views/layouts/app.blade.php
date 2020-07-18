@@ -35,13 +35,25 @@
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
-                autoHeight:true,
+                autoHeight: true,
 
                 // If we need pagination
                 pagination: {
                     el: '.swiper-pagination',
                 },
             })
+
+            $(document).on('click', '#faq .btn-link', function (e) {
+                let $option = $(this).attr('aria-expanded');
+                if ($option == "false") {
+                    $(this).closest('.card-header').css('background-color','white');
+                    $(this).html('<i class="fas fa-plus"></i>');
+                } else {
+                    $(this).closest('.card-header').css('background-color','rgba(0,0,0,.03)');
+                    $(this).html('<i class="fas fa-minus"></i>');
+                }
+
+            });
         });
     </script>
 </body>

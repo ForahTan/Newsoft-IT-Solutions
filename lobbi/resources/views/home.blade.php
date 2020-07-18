@@ -60,9 +60,9 @@
 </div>
 
 <div class="row big-top-bottom-container" id="why_lobbi">
-    <div class="col-md-12 text-center">
+    <div class="col-md-12 text-center pb-md-5">
         <h1><b>Why Lobbi</b></h1>
-        <p class="pb-md-5">A lot of amazing cool feature</p>
+        <p>A lot of amazing cool feature</p>
     </div>
 
     <div class="col-md left-side-container text-center text-md-right order-2 order-md-1">
@@ -118,7 +118,7 @@
 </div>
 
 <div class="row justify-content-center big-top-bottom-container" id="review">
-    <div class="col-md-12 text-center pb-md-3">
+    <div class="col-md-12 text-center pb-md-5">
         <h1><b>Review</b></h1>
         <p>kind words from app users</p>
     </div>
@@ -206,7 +206,7 @@
 </div>
 
 <div class="row background big-top-bottom-container" id="download_this_app">
-    <div class="col-md-6 left-side-container text-center">
+    <div class="col-md-6 left-side-container text-center pb-md-5">
         <h3><b>Download This App Now</b></h3>
         <div class="btn-group">
             <button class="btn btn-primary btn-no-right-border">
@@ -228,8 +228,173 @@
             </div>
         </div>
 
-        <p class="text-left"><small>I hereby confirm that I understand & accept you Privacy Policy and Term & Condition of use of
+        <p class="text-left"><small>I hereby confirm that I understand & accept you Privacy Policy and Term & Condition
+                of use of
                 website</small></p>
+    </div>
+</div>
+
+<div class="row big-top-bottom-container justify-content-center" id="faq">
+    <div class="col-md-12 text-center pb-md-5">
+        <h1><b>FAQs</b></h1>
+        <p>Have a question? Look here</p>
+    </div>
+    <div class="col-md-6 left-side-container">
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header" id="headingOne" style="background-color:rgba(0,0,0,.03);">
+                    <div class="row">
+                        <div class="col">
+                            <p><b>What is Lobbi?</b></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="mb-0">
+                                <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        <p>Quis autem vel eum iure reprehenderit qui un ea voluptate velit esse quam nihil molestiae
+                            consequatur vel illum qui dolorem eum fugiat quo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <div class="row">
+                        <div class="col">
+                            <p><b>How do I sign up for Lobbi?</b></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="mb-0">
+                                <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="true" aria-controls="collapseTwo">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        <p>Quis autem vel eum iure reprehenderit qui un ea voluptate velit esse quam nihil molestiae
+                            consequatur vel illum qui dolorem eum fugiat quo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <div class="row">
+                        <div class="col">
+                            <p><b>What make Lobbi different from others app?</b></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="mb-0">
+                                <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                    <div class="card-body">
+                        <p>Quis autem vel eum iure reprehenderit qui un ea voluptate velit esse quam nihil molestiae
+                            consequatur vel illum qui dolorem eum fugiat quo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <div class="row">
+                        <div class="col">
+                            <p><b>What I can do with Lobbi e-wallet?</b></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="mb-0">
+                                <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                    <div class="card-body">
+                        <p>Quis autem vel eum iure reprehenderit qui un ea voluptate velit esse quam nihil molestiae
+                            consequatur vel illum qui dolorem eum fugiat quo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <div class="row">
+                        <div class="col">
+                            <p><b>How do I sign up for Lobbi?</b></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="mb-0">
+                                <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-expanded="false" aria-controls="collapseFive">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                    <div class="card-body">
+                        <p>Quis autem vel eum iure reprehenderit qui un ea voluptate velit esse quam nihil molestiae
+                            consequatur vel illum qui dolorem eum fugiat quo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <div class="row">
+                        <div class="col">
+                            <p><b>How do I sign up for Lobbi?</b></p>
+                        </div>
+                        <div class="col-md-1">
+                            <p class="mb-0">
+                                <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseSix"
+                                    aria-expanded="false" aria-controls="collapseSix">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                    <div class="card-body">
+                        <p>Quis autem vel eum iure reprehenderit qui un ea voluptate velit esse quam nihil molestiae
+                            consequatur vel illum qui dolorem eum fugiat quo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 align-self-end right-side-container text-right">
+        <img src="{{ asset('images/Vector.png') }}" class="img-fluid">
     </div>
 </div>
 

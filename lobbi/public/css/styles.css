@@ -246,19 +246,43 @@ small {
     box-shadow: unset;
 }
 
-#download_this_app .subscribe-button{
-    border-top:unset;
-    border-left:unset;
+#download_this_app .subscribe-button {
+    border-top: unset;
+    border-left: unset;
     border-right: unset;
     border-bottom: 1px solid #585858;
-    box-shadow: unset!important;
-    outline:unset!important;
+    box-shadow: unset !important;
+    outline: unset !important;
 }
 
-#download_this_app small{
-    color:#929292;
-    font-size:0.9rem;
+#download_this_app small {
+    color: #929292;
+    font-size: 0.9rem;
 }
+
+#faq .btn-link {
+    background-color: unset;
+    border: unset;
+    color: #929292;
+}
+
+#faq .btn-link:focus,
+#faq .btn-link.active {
+    outline: unset;
+}
+
+#faq #accordion .card {
+    margin-bottom: 1%;
+}
+
+#faq .card-header {
+    background-color: white;
+}
+
+#faq .card p{
+    color:black;
+}
+
 @media (max-width: 768px) {
     #header .left-side-container {
         margin-left: unset;
