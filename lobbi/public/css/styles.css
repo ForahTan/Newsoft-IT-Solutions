@@ -1,0 +1,253 @@
+@import "../fonts/Catesque-Medium/style.css";
+@import "../fonts/ProximaNova-Regular/style.css";
+
+body {
+    overflow-x: hidden;
+    font-family: "Catesque-Medium";
+    color: rgb(60, 60, 60);
+}
+
+p {
+    color: #8C8C8C;
+    font-family: 'ProximaNova-Regular';
+    font-size: large;
+}
+
+.container {
+    max-width: 1350px;
+
+}
+
+.btn {
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 20px;
+    border: 1px solid #FE5129;
+    font-family: 'ProximaNova-Regular';
+}
+
+.btn-primary {
+    color: #FE5129;
+    background-color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.active {
+    color: white;
+    background-color: #FE5129;
+    border-color: #FE5129;
+}
+
+.btn-primary:hover>.orange-icon,
+.btn-primary.active>.orange-icon,
+.btn-primary:focus>.orange-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #FE5129;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.active {
+    color: #FE5129;
+    background-color: white;
+}
+
+.btn-no-right-border {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+.btn-no-left-border {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+}
+
+.btn-group .btn-primary {
+    width: 125px;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.orange-icon {
+    filter: invert(46%) sepia(95%) saturate(3559%) hue-rotate(345deg) brightness(102%) contrast(100%);
+}
+
+.orange-text {
+    color: #FE5129;
+}
+
+.navbar,
+.navbar-background {
+    background-color: rgb(242, 242, 242);
+}
+
+.left-side-container {
+    padding-left: 10%;
+}
+
+.right-side-container {
+    padding-right: 10%;
+}
+
+.big-top-bottom-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container-both-side {
+    padding-right: 15px;
+    margin-right: 93px;
+    padding-left: 15px;
+    margin-left: 93px;
+}
+
+.navbar-nav>li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.background {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.line {
+    position: absolute;
+    border-top: solid 1px #C0C0C0;
+    width: 10rem;
+}
+
+.line.line-left {
+    top: 30%;
+    left: 0;
+    transform: translate(-110%, 0);
+}
+
+.line.line-right {
+    top: 30%;
+    right: 0;
+    transform: translate(-30%, 0);
+}
+
+.text-image-container {
+    position: relative;
+}
+
+
+
+#header .right-side-container {
+    position: relative;
+}
+
+.photo-absolute {
+    position: absolute;
+}
+
+#header .first-phone,
+#header .second-phone {
+    top: 50%;
+    right: 50%;
+}
+
+#header .first-phone {
+    transform: translate(30%, -50%);
+    z-index: 2;
+}
+
+#header .second-phone {
+    transform: translate(100%, -50%);
+    z-index: 1;
+}
+
+#header {
+    background-color: #F7F7F7;
+}
+
+#header .background {
+    background-position: bottom;
+    background-image: url('../images/Group 16.png');
+    height: 600px;
+}
+
+#what_is_lobbi .title-padding-top {
+    padding-top: 5rem;
+}
+
+#why_lobbi .text-image-container img {
+    position: absolute;
+    right: -25%;
+    top: 0;
+}
+
+#why_lobbi .text-image-container.right img {
+    position: absolute;
+    left: -25%;
+    top: 0;
+}
+
+
+@media (max-width: 768px) {
+    #header .left-side-container {
+        margin-left: unset;
+    }
+
+    #header .background {
+        height: 300px;
+    }
+
+    #header .first-phone {
+        transform: translate(20%, -50%);
+    }
+
+    #header .second-phone {
+        transform: translate(90%, -50%);
+    }
+
+    #why_lobbi .text-image-container img {
+        position: unset;
+        padding: 5%;
+    }
+
+    #why_lobbi .text-image-container.right img {
+        position: unset;
+        padding: 5%;
+    }
+
+
+    #what_is_lobbi .title-padding-top {
+        padding-top: 1rem;
+    }
+
+
+    .first-phone,
+    .second-phone {
+        width: 40%;
+    }
+
+
+    .left-side-container {
+        padding-left: 15px;
+    }
+
+    .container-both-side {
+        padding-right: unset;
+        margin-right: unset;
+        padding-left: unset;
+        margin-left: unset;
+    }
+
+    .line {
+        border: unset;
+    }
+
+
+}
