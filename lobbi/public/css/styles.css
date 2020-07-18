@@ -13,8 +13,25 @@ p {
     font-size: large;
 }
 
-small{
-    color:black;
+small {
+    color: black;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    font-family: 'ProximaNova-Regular' !important;
+    color: #585858 !important;
+}
+
+::-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: 'ProximaNova-Regular' !important;
+    color: #585858 !important;
+}
+
+::placeholder {
+    font-family: 'ProximaNova-Regular' !important;
+    color: #585858 !important;
 }
 
 
@@ -143,7 +160,7 @@ small{
     transform: translate(-30%, 0);
 }
 
-.line.line-center{
+.line.line-center {
     width: 5rem;
     bottom: 40%;
     right: 50%;
@@ -154,12 +171,12 @@ small{
     position: relative;
 }
 
-.comment{
+.comment {
     font-style: italic;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background:darkgrey;
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: darkgrey;
 }
 
 #header .right-side-container {
@@ -212,6 +229,36 @@ small{
     top: 0;
 }
 
+#download_this_app.background {
+    background-color: #F2F2F2;
+}
+
+#download_this_app .form-control {
+    color: #495057;
+    background-color: unset;
+    border: unset;
+    border-bottom: 1px solid #585858;
+    border-radius: unset;
+}
+
+#download_this_app .form-control:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+
+#download_this_app .subscribe-button{
+    border-top:unset;
+    border-left:unset;
+    border-right: unset;
+    border-bottom: 1px solid #585858;
+    box-shadow: unset!important;
+    outline:unset!important;
+}
+
+#download_this_app small{
+    color:#929292;
+    font-size:0.9rem;
+}
 @media (max-width: 768px) {
     #header .left-side-container {
         margin-left: unset;
@@ -256,10 +303,10 @@ small{
     }
 
     .container-both-side {
-        padding-right: unset;
-        margin-right: unset;
-        padding-left: unset;
-        margin-left: unset;
+        padding-right: 1%;
+        margin-right: 1%;
+        padding-left: 1%;
+        margin-left: 1%;
     }
 
     .line {

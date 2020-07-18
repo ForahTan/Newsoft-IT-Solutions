@@ -125,10 +125,10 @@
 
     <div class="col-md-8 swiper-container container-both-side">
         <div class="swiper-wrapper">
-            <div class="swiper-slide text-center pb-md-5">
+            <div class="swiper-slide text-center pb-md-5 pb-2">
                 <img src="{{ asset('images/Ellipse.png') }}" class='img-fluid p-md-3'>
-                <div class="row ">
-                    <div class="col text-right">
+                <div class="row">
+                    <div class="col text-right d-none d-md-block">
                         <img src="{{ asset('images/left-quotes.svg') }}" class="img-fluid">
                     </div>
                     <div class="col-md-7 text-center text-image-container">
@@ -145,15 +145,15 @@
                         </p>
 
                     </div>
-                    <div class="col text-left">
+                    <div class="col text-left d-none d-md-block">
                         <img src="{{ asset('images/right-quotes.svg') }}" class="img-fluid">
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide text-center pb-md-5">
+            <div class="swiper-slide text-center pb-md-5 pb-2">
                 <img src="{{ asset('images/Ellipse.png') }}" class='img-fluid p-md-3'>
-                <div class="row ">
-                    <div class="col text-right">
+                <div class="row">
+                    <div class="col text-right d-none d-md-block">
                         <img src="{{ asset('images/left-quotes.svg') }}" class="img-fluid">
                     </div>
                     <div class="col-md-7 text-center text-image-container">
@@ -170,15 +170,15 @@
                         </p>
 
                     </div>
-                    <div class="col text-left">
+                    <div class="col text-left d-none d-md-block">
                         <img src="{{ asset('images/right-quotes.svg') }}" class="img-fluid">
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide text-center pb-md-5">
+            <div class="swiper-slide text-center pb-md-5 pb-2">
                 <img src="{{ asset('images/Ellipse.png') }}" class='img-fluid p-md-3'>
-                <div class="row ">
-                    <div class="col text-right">
+                <div class="row">
+                    <div class="col text-right d-none d-md-block">
                         <img src="{{ asset('images/left-quotes.svg') }}" class="img-fluid">
                     </div>
                     <div class="col-md-7 text-center text-image-container">
@@ -195,7 +195,7 @@
                         </p>
 
                     </div>
-                    <div class="col text-left">
+                    <div class="col text-left d-none d-md-block">
                         <img src="{{ asset('images/right-quotes.svg') }}" class="img-fluid">
                     </div>
                 </div>
@@ -205,6 +205,32 @@
     </div>
 </div>
 
+<div class="row background big-top-bottom-container" id="download_this_app">
+    <div class="col-md-6 left-side-container text-center">
+        <h3><b>Download This App Now</b></h3>
+        <div class="btn-group">
+            <button class="btn btn-primary btn-no-right-border">
+                <img src="{{ asset('images/icons8-android-os.svg') }}" class="img-fluid icon orange-icon">
+                Android
+            </button>
+            <button class="btn btn-primary btn-no-left-border">
+                <img src="{{ asset('images/icons8-apple-logo.svg') }}" class="img-fluid icon orange-icon">
+                IOS
+            </button>
+        </div>
+    </div>
+    <div class="col-md-6 right-side-container text-center">
+        <h3><b>Stay with Us</b></h3>
+        <div class="input-group">
+            <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+            <div class="input-group-append">
+                <button class="subscribe-button" type="button">Subscribe</button>
+            </div>
+        </div>
 
+        <p class="text-left"><small>I hereby confirm that I understand & accept you Privacy Policy and Term & Condition of use of
+                website</small></p>
+    </div>
+</div>
 
-@endsection
+<div class="row" @endsection
