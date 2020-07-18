@@ -13,6 +13,11 @@ p {
     font-size: large;
 }
 
+small{
+    color:black;
+}
+
+
 .container {
     max-width: 1350px;
 
@@ -138,11 +143,24 @@ p {
     transform: translate(-30%, 0);
 }
 
+.line.line-center{
+    width: 5rem;
+    bottom: 40%;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
 .text-image-container {
     position: relative;
 }
 
+.comment{
+    font-style: italic;
+}
 
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background:darkgrey;
+}
 
 #header .right-side-container {
     position: relative;
@@ -193,7 +211,6 @@ p {
     left: -25%;
     top: 0;
 }
-
 
 @media (max-width: 768px) {
     #header .left-side-container {

@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-
 @section('content')
 
 <div class="row" id="header">
@@ -117,5 +116,95 @@
         </div>
     </div>
 </div>
+
+<div class="row justify-content-center big-top-bottom-container" id="review">
+    <div class="col-md-12 text-center pb-md-3">
+        <h1><b>Review</b></h1>
+        <p>kind words from app users</p>
+    </div>
+
+    <div class="col-md-8 swiper-container container-both-side">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide text-center pb-md-5">
+                <img src="{{ asset('images/Ellipse.png') }}" class='img-fluid p-md-3'>
+                <div class="row ">
+                    <div class="col text-right">
+                        <img src="{{ asset('images/left-quotes.svg') }}" class="img-fluid">
+                    </div>
+                    <div class="col-md-7 text-center text-image-container">
+                        <p class="comment pb-md-4">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+                            quam
+                            nihil molestiae
+                            vel. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse nihil molestiae
+                            vel</p>
+
+                        <div class="line line-center"></div>
+
+                        <p>Setephanie Elise <br>
+                            <small><b>App User</b></small>
+                        </p>
+
+                    </div>
+                    <div class="col text-left">
+                        <img src="{{ asset('images/right-quotes.svg') }}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide text-center pb-md-5">
+                <img src="{{ asset('images/Ellipse.png') }}" class='img-fluid p-md-3'>
+                <div class="row ">
+                    <div class="col text-right">
+                        <img src="{{ asset('images/left-quotes.svg') }}" class="img-fluid">
+                    </div>
+                    <div class="col-md-7 text-center text-image-container">
+                        <p class="comment pb-md-4">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+                            quam
+                            nihil molestiae
+                            vel. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse nihil molestiae
+                            vel</p>
+
+                        <div class="line line-center"></div>
+
+                        <p>Setephanie Elise <br>
+                            <small><b>App User</b></small>
+                        </p>
+
+                    </div>
+                    <div class="col text-left">
+                        <img src="{{ asset('images/right-quotes.svg') }}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide text-center pb-md-5">
+                <img src="{{ asset('images/Ellipse.png') }}" class='img-fluid p-md-3'>
+                <div class="row ">
+                    <div class="col text-right">
+                        <img src="{{ asset('images/left-quotes.svg') }}" class="img-fluid">
+                    </div>
+                    <div class="col-md-7 text-center text-image-container">
+                        <p class="comment pb-md-4">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+                            quam
+                            nihil molestiae
+                            vel. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse nihil molestiae
+                            vel</p>
+
+                        <div class="line line-center"></div>
+
+                        <p>Setephanie Elise <br>
+                            <small><b>App User</b></small>
+                        </p>
+
+                    </div>
+                    <div class="col text-left">
+                        <img src="{{ asset('images/right-quotes.svg') }}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+
 
 @endsection
