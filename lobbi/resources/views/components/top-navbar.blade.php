@@ -1,7 +1,9 @@
 <div class="navbar-background sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 text-right container-both-side ">
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('images/Group 11.png') }}" width="60" height="60" alt="logo" class="logo">
+        <a class="navbar-brand" href="{{ route('home') }}">
+            <img src="{{ asset('images/Group 11.png') }}"  alt="logo" class="logo logo-image-resize-enlarge d-md-block d-none">
+            <img src="{{ asset('images/Group 11.png') }}"  alt="logo" width="30px" height="30px" class="d-block d-md-none">
+
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

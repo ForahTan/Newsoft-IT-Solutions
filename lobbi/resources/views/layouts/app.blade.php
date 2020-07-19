@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{!! asset('images/logo.ico') !!}" type="image/x-icon"/>
+
+    <title>{{ config('app.name') }}</title>
+
     {{-- Jquery --}}
     <script src="{{ asset('vendor/jquery-3.3.1/jquery-3.3.1.min.js') }}"></script>
     <script src=" {{ asset('vendor/jquery-ui-1.12.1/jquery-ui.min.js') }}"></script>
@@ -22,7 +26,7 @@
 <body>
     @include('components.top-navbar')
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="fullpage">
         @yield('content')
         @include('layouts.footer')
     </div>
@@ -31,57 +35,6 @@
     <script src="{{asset('vendor/bootstrap-4.0.0-dist/js/bootstrap.min.js?v='.time())}}"></script>
     <script src="{{asset('vendor/swiper-5.3.6/package/js/swiper.min.js?v='.time())}}"></script>
     <script src="{{asset('vendor/wow-master/dist/wow.min.js?v='.time())}}"></script>
-
-
-    <script>
-        $(function () {
-            var mySwiper = new Swiper('.swiper-container', {
-                // Optional parameters
-                direction: 'horizontal',
-                loop: true,
-                autoHeight: true,
-
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-            })
-
-            $(document).on('click', '#faq .btn-link', function (e) {
-                let $option = $(this).attr('aria-expanded');
-                if ($option == "false") {
-                    $(this).closest('.card-header').css('background-color', 'white');
-                    $(this).html('<i class="fas fa-plus"></i>');
-                } else {
-                    $(this).closest('.card-header').css('background-color', 'rgba(0,0,0,.03)');
-                    $(this).html('<i class="fas fa-minus"></i>');
-                }
-
-            });
-
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 20) {
-                        $('.logo').attr('width','30px');
-                        $('.logo').attr('height','30px');
-
-                        $('#toTopBtn').fadeIn();
-                    } else {
-                        $('.logo').attr('width','60px');
-                        $('.logo').attr('height','60px');
-                        $('#toTopBtn').fadeOut();
-                    }
-                });
-
-                $('#toTopBtn').click(function () {
-                    $("html, body").animate({
-                        scrollTop: 0
-                    }, 1000);
-                    return false;
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>

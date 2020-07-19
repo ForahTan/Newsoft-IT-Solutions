@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="row" id="header">
+<div class="row section" id="header">
     <div class="left-side-container col-md-5 text-center text-md-left align-right align-self-center">
-        <h1><b>An App For Anything<br> And Everything</b></h1>
+        <h1 class="wow animate__animated animate__lightSpeedInLeft"><b>An App For Anything<br> And Everything</b></h1>
         <p>The most useful app you'll ever use</p>
         <div class="btn-group">
             <button class="btn btn-primary btn-no-right-border">
@@ -17,55 +17,66 @@
             </button>
         </div>
     </div>
-    <div class="right-side-container col-md-7 background">
-        <img src="{{ asset('images/group 263.png') }}" class="img-fluid photo-absolute first-phone">
-        <img src="{{ asset('images/group 264.png') }}" class="img-fluid photo-absolute second-phone">
+    <div class="right-side-container col-md-7 background wow animate__animated animate__fadeIn">
+        <img src="{{ asset('images/group 263.png') }}"
+            class="img-fluid photo-absolute first-phone ">
+        <img src="{{ asset('images/group 264.png') }}"
+            class="img-fluid photo-absolute second-phone">
     </div>
 </div>
 
-<div class="row big-top-bottom-container" id="what_is_lobbi">
+<div class="row big-top-bottom-container section" id="what_is_lobbi">
     {{-- Bridging Relationship  --}}
     <div class="col-md-6 left-side-container order-1 order-md-1">
-        <img src="{{ asset('images/Group 232.png') }}" class="img-fluid">
+        <img src="{{ asset('images/Cloud_1.svg') }}" class="img-fluid animation_component animate__animated animate__shakeX animate__infinite infinite animate__slower" style="position: absolute;">
+        <img src="{{ asset('images/Group 232.svg') }}" class="img-fluid">
     </div>
     <div class="col-md-6 right-side-container pt-md-5 order-2 order-md-2">
         <div class="line line-left"></div>
-        <h1 class="orange-text title-padding-top"><b>Bridging Relationships</b></h1>
+        <h1 class="orange-text title-padding-top wow animate__animated animate__lightSpeedInRight"><b>Bridging
+                Relationships</b></h1>
         <p>Texting, voice & video call your fingertips</p>
-        <button class='btn btn-primary'>Learn More</button>
+        <div class="text-center">
+            <button class='btn btn-primary mr-md-5 text-center mb-2 mb-md-0'>Learn More</button>
+            <button class='btn btn-secondary text-center'>Learn More</button>
+        </div>
     </div>
 
     {{-- Capturing Moment --}}
     <div class="col-md-6 pt-md-5 left-side-container order-4 order-md-3">
-        <h1 class="orange-text title-padding-top"><b>Capturing Moments</b></h1>
+        <h1 class="orange-text title-padding-top wow animate__animated animate__lightSpeedInLeft"><b>Capturing
+                Moments</b></h1>
         <p>Keep & share your precious experiences <br> with others</p>
-        <button class='btn btn-primary'>Learn More</button>
+        <button class='btn btn-secondary'>Learn More</button>
         <div class="line line-right"></div>
     </div>
 
     <div class="col-md-6 right-side-container text-right order-3 order-md-4">
-        <img src="{{ asset('images/Group 233.png') }}" class="img-fluid">
+        <img src="{{ asset('images/Cloud_2.svg') }}" class="img-fluid animation_component animate__animated animate__shakeX animate__infinite infinite animate__slower" style="position: absolute;">
+        <img src="{{ asset('images/Group 233.svg') }}" class="img-fluid">
     </div>
 
     {{-- Digitalizing Transactions --}}
     <div class="col-md-6 left-side-container order-5 order-md-5">
-        <img src="{{ asset('images/Group 234.png') }}" class="img-fluid">
+        <img src="{{ asset('images/Money.svg') }}" class="img-fluid animation_component animate__animated animate__flash animate__infinite infinite animate__slower" style="position: absolute;">
+        <img src="{{ asset('images/Group 234.svg') }}" class="img-fluid">
     </div>
     <div class="col-md-6 right-side-container pt-md-5 order-6 order-md-6">
         <div class="line line-left"></div>
-        <h1 class="orange-text title-padding-top"><b>Digitalizing Transactions</b></h1>
+        <h1 class="orange-text title-padding-top wow animate__animated animate__lightSpeedInRight"><b>Digitalizing
+                Transactions</b></h1>
         <p>Secure platform to perform online transactions</p>
-        <button class='btn btn-primary'>Learn More</button>
+        <button class='btn btn-secondary'>Learn More</button>
     </div>
 </div>
 
-<div class="row big-top-bottom-container" id="why_lobbi">
-    <div class="col-md-12 text-center pb-md-5">
+<div class="row big-top-bottom-container section" id="why_lobbi">
+    <div class="col-md-12 text-center pb-md-5 wow animate__animated animate__fadeIn">
         <h1><b>Why Lobbi</b></h1>
         <p>A lot of amazing cool feature</p>
     </div>
 
-    <div class="col-md left-side-container text-center text-md-right order-2 order-md-1">
+    <div class="col-md left-side-container text-center text-md-right order-2 order-md-1 wow animate__animated animate__flipInX">
         <div class="text-image-container">
             <img src="{{ asset('images/Group-2.png') }}" class="img-fluid">
             <h5>RELIABLE MESSAGING</h5>
@@ -93,7 +104,7 @@
         <img src="{{ asset('images/Group.png') }}" class="img-fluid">
     </div>
 
-    <div class="col-md right-side-container text-center text-md-left order-3 order-md-3">
+    <div class="col-md right-side-container text-center text-md-left order-3 order-md-3  wow animate__animated animate__flipInX">
         <div class="text-image-container right">
             <img src="{{ asset('images/Ellipse 2.png') }}" class="img-fluid">
             <h5>COMMUNICATIONS</h5>
@@ -117,13 +128,13 @@
     </div>
 </div>
 
-<div class="row justify-content-center big-top-bottom-container" id="review">
-    <div class="col-md-12 text-center pb-md-5">
+<div class="row justify-content-center big-top-bottom-container section" id="review">
+    <div class="col-md-12 text-center pb-md-5 wow animate__animated animate__fadeIn">
         <h1><b>Review</b></h1>
         <p>kind words from app users</p>
     </div>
 
-    <div class="col-md-8 swiper-container container-both-side">
+    <div class="col-md-8 swiper-container container-both-side wow animate__animated animate__zoomInDown">
         <div class="swiper-wrapper">
             <div class="swiper-slide text-center pb-md-5 pb-2">
                 <img src="{{ asset('images/Ellipse.png') }}" class='img-fluid p-md-3'>
@@ -205,8 +216,8 @@
     </div>
 </div>
 
-<div class="row background big-top-bottom-container" id="download_this_app">
-    <div class="col-md-6 left-side-container text-center pb-md-5">
+<div class="row background big-top-bottom-container wow animate__animated animate__fadeIn section" id="download_this_app">
+    <div class="col-md-6 left-side-container text-center pb-md-5 ">
         <h3><b>Download This App Now</b></h3>
         <div class="btn-group">
             <button class="btn btn-primary btn-no-right-border">
@@ -237,8 +248,8 @@
     </div>
 </div>
 
-<div class="row big-top-bottom-container justify-content-center" id="faq">
-    <div class="col-md-12 text-center pb-md-5">
+<div class="row big-top-bottom-container justify-content-center section" id="faq">
+    <div class="col-md-12 text-center pb-md-5 wow animate__animated animate__fadeIn">
         <h1><b>FAQs</b></h1>
         <p>Have a question? Look here</p>
     </div>
@@ -249,7 +260,7 @@
             <div class="card">
                 <div class="card-header" id="headingOne" style="background-color:rgba(0,0,0,.03);">
                     <div class="row">
-                        <div class="col col-10">
+                        <div class="col-md-11 col-10">
                             <p><b>What is Lobbi?</b></p>
                         </div>
                         <div class="col-md-1 col-1">
@@ -274,7 +285,7 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <div class="row">
-                        <div class="col col-10">
+                        <div class="col-md-11  col-10">
                             <p><b>How do I sign up for Lobbi?</b></p>
                         </div>
                         <div class="col-md-1 col-1">
@@ -299,7 +310,7 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <div class="row">
-                        <div class="col col-10">
+                        <div class="col-md-11  col-10">
                             <p><b>What make Lobbi different from others app?</b></p>
                         </div>
                         <div class="col-md-1 col-1">
@@ -324,7 +335,7 @@
             <div class="card">
                 <div class="card-header" id="headingFour">
                     <div class="row">
-                        <div class="col col-10">
+                        <div class="col-md-11  col-10">
                             <p><b>What I can do with Lobbi e-wallet?</b></p>
                         </div>
                         <div class="col-md-1 col-1">
@@ -349,7 +360,7 @@
             <div class="card">
                 <div class="card-header" id="headingFive">
                     <div class="row">
-                        <div class="col col-10">
+                        <div class="col-md-11  col-10">
                             <p><b>How do I sign up for Lobbi?</b></p>
                         </div>
                         <div class="col-md-1 col-1">
@@ -374,7 +385,7 @@
             <div class="card">
                 <div class="card-header" id="headingSix">
                     <div class="row">
-                        <div class="col col-10">
+                        <div class="col-md-11  col-10">
                             <p><b>How do I sign up for Lobbi?</b></p>
                         </div>
                         <div class="col-md-1 col-1">
@@ -403,13 +414,13 @@
     </div>
 </div>
 
-<div class="row big-top-bottom-container justify-content-center" id="follow_our_news">
-    <div class="col-md-12 text-center pb-md-5">
+<div class="row big-top-bottom-container justify-content-center section" id="follow_our_news">
+    <div class="col-md-12 text-center pb-md-5 wow animate__animated animate__fadeIn">
         <h1><b>Follow Our News</b></h1>
         <p>Iorem ipsum dolor sit amet</p>
     </div>
     <div class="col-md left-side-container">
-        <div class="card">
+        <div class="card wow animate__animated animate__pulse">
             <img class="card-img-top" src="{{ asset('images/blank_image.svg') }}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
@@ -438,7 +449,7 @@
         </div>
     </div>
     <div class="col-md">
-        <div class="card">
+        <div class="card wow animate__animated animate__pulse">
             <img class="card-img-top" src="{{ asset('images/blank_image.svg') }}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
@@ -467,9 +478,9 @@
         </div>
     </div>
     <div class="col-md right-side-container">
-        <div class="card">
+        <div class="card wow animate__animated animate__pulse">
             <img class="card-img-top" src="{{ asset('images/blank_image.svg') }}" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body ">
                 <h5 class="card-title">Special title treatment</h5>
                 @php
                 $text= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -497,14 +508,14 @@
     </div>
 </div>
 
-<div class="row big-top-bottom-container justify-content-center" id="get_in_touch">
+<div class="row big-top-bottom-container justify-content-center section " id="get_in_touch">
     <div class="col-md-12 background"></div>
-    <div class="col-md-12 text-center pb-md-5 pt-md-5">
+    <div class="col-md-12 text-center pb-md-5 pt-md-5 wow animate__animated animate__fadeIn">
         <h1><b>Get In Touch</b></h1>
         <p>It all starts with a conversion. Let's talk</p>
     </div>
 
-    <div class="col-md-5 left-side-container pb-3 pb-md-0">
+    <div class="col-md-5 left-side-container pb-3 pb-md-0 wow animate__animated animate__flipInX">
         <h1 class='orange-text'>lobbi</h1>
         <hr>
         {{-- Address --}}
@@ -569,7 +580,7 @@
         <a href="#"><img src="{{ asset('images/instagram.svg') }}" class="img-fluid \"></a>
     </div>
 
-    <div class="col-md-6 left-side-container right-side-container text-right">
+    <div class="col-md-6 left-side-container right-side-container text-right wow animate__animated animate__flipInX">
         <h6 class='text-left'>Drop us for business opportunity</h6>
         <form>
             @csrf
@@ -583,7 +594,7 @@
                 <input type="email" class="form-control" id="email" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-                <textarea class="form-control" id="message" rows="3"  placeholder="Message"></textarea>
+                <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
             </div>
             <button type="submit" class="orange-text">Submit ></button>
         </form>
