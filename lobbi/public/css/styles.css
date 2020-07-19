@@ -279,8 +279,21 @@ small {
     background-color: white;
 }
 
-#faq .card p{
-    color:black;
+#faq .card p {
+    color: black;
+}
+
+#follow_our_news .card,
+#follow_our_news .card-footer {
+    background-color: #FAFAFA;
+}
+
+#follow_our_news .card {
+    border: unset;
+}
+
+#follow_our_news small{
+    color:#C0C0C0;
 }
 
 @media (max-width: 768px) {

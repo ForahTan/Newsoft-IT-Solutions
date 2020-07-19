@@ -239,16 +239,17 @@
         <h1><b>FAQs</b></h1>
         <p>Have a question? Look here</p>
     </div>
+
     <div class="col-md-6 left-side-container">
         <div id="accordion">
 
             <div class="card">
                 <div class="card-header" id="headingOne" style="background-color:rgba(0,0,0,.03);">
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-10">
                             <p><b>What is Lobbi?</b></p>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 col-1">
                             <p class="mb-0">
                                 <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseOne"
                                     aria-expanded="false" aria-controls="collapseOne">
@@ -270,10 +271,10 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-10">
                             <p><b>How do I sign up for Lobbi?</b></p>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 col-1">
                             <p class="mb-0">
                                 <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseTwo"
                                     aria-expanded="true" aria-controls="collapseTwo">
@@ -295,10 +296,10 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-10">
                             <p><b>What make Lobbi different from others app?</b></p>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 col-1">
                             <p class="mb-0">
                                 <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseThree"
                                     aria-expanded="false" aria-controls="collapseThree">
@@ -320,10 +321,10 @@
             <div class="card">
                 <div class="card-header" id="headingFour">
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-10">
                             <p><b>What I can do with Lobbi e-wallet?</b></p>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 col-1">
                             <p class="mb-0">
                                 <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseFour"
                                     aria-expanded="false" aria-controls="collapseFour">
@@ -345,10 +346,10 @@
             <div class="card">
                 <div class="card-header" id="headingFive">
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-10">
                             <p><b>How do I sign up for Lobbi?</b></p>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 col-1">
                             <p class="mb-0">
                                 <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseFive"
                                     aria-expanded="false" aria-controls="collapseFive">
@@ -370,10 +371,10 @@
             <div class="card">
                 <div class="card-header" id="headingSix">
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-10">
                             <p><b>How do I sign up for Lobbi?</b></p>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 col-1">
                             <p class="mb-0">
                                 <button class="btn-link text-right" data-toggle="collapse" data-target="#collapseSix"
                                     aria-expanded="false" aria-controls="collapseSix">
@@ -393,9 +394,103 @@
             </div>
         </div>
     </div>
+
     <div class="col-md-6 align-self-end right-side-container text-right">
         <img src="{{ asset('images/Vector.png') }}" class="img-fluid">
     </div>
 </div>
 
-<div class="row" @endsection
+<div class="row big-top-bottom-container" id="follow_our_news">
+    <div class="col-md-12 text-center pb-md-5">
+        <h1><b>Follow Our News</b></h1>
+        <p>Iorem ipsum dolor sit amet</p>
+    </div>
+    <div class="col-md left-side-container">
+        <div class="card">
+            <img class="card-img-top" src="{{ asset('images/blank_image.svg') }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                @php
+                $text= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                Ipsum.";
+                @endphp
+
+                <p class="card-text">{{Str::limit(strip_tags($text),150)}}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col">
+                        <small>2 days ago</small>
+                    </div>
+                    <div class="col text-right">
+                        <a href="#"><small>Read More</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md">
+        <div class="card">
+            <img class="card-img-top" src="{{ asset('images/blank_image.svg') }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                @php
+                $text= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                Ipsum.";
+                @endphp
+
+                <p class="card-text">{{Str::limit(strip_tags($text),150)}}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col">
+                        <small>2 days ago</small>
+                    </div>
+                    <div class="col text-right">
+                        <a href="#"><small>Read More</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md right-side-container">
+        <div class="card">
+            <img class="card-img-top" src="{{ asset('images/blank_image.svg') }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                @php
+                $text= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                Ipsum.";
+                @endphp
+
+                <p class="card-text">{{Str::limit(strip_tags($text),150)}}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col">
+                        <small>2 days ago</small>
+                    </div>
+                    <div class="col text-right">
+                        <a href="#"><small>Read More</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
