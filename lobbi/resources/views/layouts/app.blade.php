@@ -15,19 +15,23 @@
     <link href="{{ asset('vendor/fontawesome-5.10.2/css/all.min.css') }}" rel="stylesheet" type="text/css">
     {{-- Swipper --}}
     <link href="{{ asset('vendor/swiper-5.3.6/package/css/swiper.min.css') }}" rel="stylesheet" type="text/css">
+    {{-- Animation --}}
+    <link rel="stylesheet" href="{{ asset('vendor/wow-master/animate.css') }}"/>
 </head>
 
 <body>
     @include('components.top-navbar')
+
     <div class="container-fluid">
         @yield('content')
-        @yield('layouts.footer')
+        @include('layouts.footer')
     </div>
-
 
     <script src="{{asset('js/animation.js?v='.time())}}"></script>
     <script src="{{asset('vendor/bootstrap-4.0.0-dist/js/bootstrap.min.js?v='.time())}}"></script>
     <script src="{{asset('vendor/swiper-5.3.6/package/js/swiper.min.js?v='.time())}}"></script>
+    <script src="{{asset('vendor/wow-master/dist/wow.min.js?v='.time())}}"></script>
+
 
     <script>
         $(function () {
@@ -46,13 +50,35 @@
             $(document).on('click', '#faq .btn-link', function (e) {
                 let $option = $(this).attr('aria-expanded');
                 if ($option == "false") {
-                    $(this).closest('.card-header').css('background-color','white');
+                    $(this).closest('.card-header').css('background-color', 'white');
                     $(this).html('<i class="fas fa-plus"></i>');
                 } else {
-                    $(this).closest('.card-header').css('background-color','rgba(0,0,0,.03)');
+                    $(this).closest('.card-header').css('background-color', 'rgba(0,0,0,.03)');
                     $(this).html('<i class="fas fa-minus"></i>');
                 }
 
+            });
+
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 20) {
+                        $('.logo').attr('width','30px');
+                        $('.logo').attr('height','30px');
+
+                        $('#toTopBtn').fadeIn();
+                    } else {
+                        $('.logo').attr('width','60px');
+                        $('.logo').attr('height','60px');
+                        $('#toTopBtn').fadeOut();
+                    }
+                });
+
+                $('#toTopBtn').click(function () {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 1000);
+                    return false;
+                });
             });
         });
     </script>

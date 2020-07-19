@@ -221,12 +221,15 @@
     </div>
     <div class="col-md-6 right-side-container text-center">
         <h3><b>Stay with Us</b></h3>
-        <div class="input-group">
-            <input type="email" class="form-control" id="email" placeholder="Your Email Address">
-            <div class="input-group-append">
-                <button class="subscribe-button" type="button">Subscribe</button>
+        <form>
+            @csrf
+            <div class="input-group">
+                <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                <div class="input-group-append">
+                    <button class="subscribe-button" type="button">Subscribe</button>
+                </div>
             </div>
-        </div>
+        </form>
 
         <p class="text-left"><small>I hereby confirm that I understand & accept you Privacy Policy and Term & Condition
                 of use of
@@ -400,7 +403,7 @@
     </div>
 </div>
 
-<div class="row big-top-bottom-container" id="follow_our_news">
+<div class="row big-top-bottom-container justify-content-center" id="follow_our_news">
     <div class="col-md-12 text-center pb-md-5">
         <h1><b>Follow Our News</b></h1>
         <p>Iorem ipsum dolor sit amet</p>
@@ -491,6 +494,99 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="row big-top-bottom-container justify-content-center" id="get_in_touch">
+    <div class="col-md-12 background"></div>
+    <div class="col-md-12 text-center pb-md-5 pt-md-5">
+        <h1><b>Get In Touch</b></h1>
+        <p>It all starts with a conversion. Let's talk</p>
+    </div>
+
+    <div class="col-md-5 left-side-container pb-3 pb-md-0">
+        <h1 class='orange-text'>lobbi</h1>
+        <hr>
+        {{-- Address --}}
+        <div class="row">
+            <div class="col-md-5">
+                <p><img src="{{ asset('images/address.svg') }}" class='img-fluid'>
+                    Address</p>
+            </div>
+            <div class="col-md-1 d-none d-md-block">
+                |
+            </div>
+            <div class="col-md-6">
+                <p>29, Level 10, The Boulevard Office, Lingkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur</p>
+            </div>
+        </div>
+        {{-- Working Hours --}}
+        <div class="row">
+            <div class="col-md-5">
+                <p>
+                    <img src="{{ asset('images/working_hours.svg') }}" class='img-fluid'>
+                    Working Hours
+                </p>
+            </div>
+            <div class="col-md-1 d-none d-md-block">
+                |
+            </div>
+            <div class="col-md-6">
+                <p>9am - 6pm</p>
+            </div>
+        </div>
+        {{-- Tel --}}
+        <div class="row">
+            <div class="col-md-5">
+                <p>
+                    <img src="{{ asset('images/tel.svg') }}" class='img-fluid'>
+                    Tel
+                </p>
+            </div>
+            <div class="col-md-1 d-none d-md-block">
+                |
+            </div>
+            <div class="col-md-6">
+                <p>014 - 963 9067</p>
+            </div>
+        </div>
+        {{-- Email --}}
+        <div class="row">
+            <div class="col-md-5">
+                <p><img src="{{ asset('images/email.svg') }}" class='img-fluid'>
+                    Address</p>
+            </div>
+            <div class="col-md-1 d-none d-md-block">
+                |
+            </div>
+            <div class="col-md-6">
+                <p>hello@lobbi.com.my</p>
+            </div>
+        </div>
+        <hr>
+        <h6>Connect with us. Spread the words.</h6>
+        <a href="#"><img src="{{ asset('images/facebook.svg') }}" class="img-fluid"></a>
+        <a href="#"><img src="{{ asset('images/instagram.svg') }}" class="img-fluid \"></a>
+    </div>
+
+    <div class="col-md-6 left-side-container right-side-container text-right">
+        <h6 class='text-left'>Drop us for business opportunity</h6>
+        <form>
+            @csrf
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" name='name' placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Mobile">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="message" rows="3"  placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="orange-text">Submit ></button>
+        </form>
     </div>
 </div>
 @endsection
