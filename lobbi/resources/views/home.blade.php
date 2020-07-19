@@ -4,7 +4,7 @@
 
 <div class="row section" id="header">
     <div class="left-side-container col-md-5 text-center text-md-left align-right align-self-center">
-        <h1 class="wow animate__animated animate__lightSpeedInLeft"><b>An App For Anything<br> And Everything</b></h1>
+        <h1 class="wow animate__animated animate__lightSpeedInLeft animate__delay-2s"><b>An App For Anything<br> And Everything</b></h1>
         <p>The most useful app you'll ever use</p>
         <div class="btn-group">
             <button class="btn btn-primary btn-no-right-border">
