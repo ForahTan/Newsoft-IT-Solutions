@@ -31,10 +31,13 @@
         @include('layouts.footer')
     </div>
 
+    <script src="{{asset('vendor/vue.js?v='.time())}}"></script>
     <script src="{{asset('js/animation.js?v='.time())}}"></script>
+    <script src="{{asset('js/home-vue.js?v='.time())}}"></script>
     <script src="{{asset('vendor/bootstrap-4.0.0-dist/js/bootstrap.min.js?v='.time())}}"></script>
     <script src="{{asset('vendor/swiper-5.3.6/package/js/swiper.min.js?v='.time())}}"></script>
     <script src="{{asset('vendor/wow-master/dist/wow.min.js?v='.time())}}"></script>
+    
 </body>
 
 </html>
